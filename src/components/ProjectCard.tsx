@@ -5,16 +5,16 @@ export default function ProjectCard({
     githubURL,
 }: ProjectCardProps) {
     return (
-        <article>
+        <article className="rounded-xl border p-5">
             <h3>{title}</h3>
             <p>{description}</p>
             <small>{technology}</small>
-            <a>{githubURL}</a>
+            <a href={githubURL} target="_blank" rel="noreferrer">GitHub</a>
         </article>
     )
 }
 
-type ProjectCardProps = {
+export type ProjectCardProps = {
     title: string
     description: string
     technology: string
