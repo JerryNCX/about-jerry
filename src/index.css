@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@theme{
+    --color-midnight: #0B132B;
+    --color-surface: #1C2541;
+    --color-accent: #5BC0BE;
+    --color-link: #38BDF8;
+    --color-ink: #F8FAFC;
+    --color-muted: #94A3B8;
+    --font-sans: "Archivo", ui-sans-serif, system-ui, sans-serif;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--color-link);
+    outline-offset: 3px;
+}

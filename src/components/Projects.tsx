@@ -8,10 +8,10 @@ const projects: ProjectCardProps[] = [
 
 export default function Projects() {
     return (
-        <section id="projects" className="grid gap-4 sm:grid-cols-2">
+        <div className="grid gap-4 sm:grid-cols-2">
             {projects.map((a) => (
                 <ProjectCard key={a.title} {...a} /> // spread syntax, passes every field of 'a' as prop shorthand for title={a.title}
-                ))}
-        </section>
+            ))}
+        </div>
     )
 }
